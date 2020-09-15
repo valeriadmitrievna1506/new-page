@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/pagestyle.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
     <link rel="stylesheet" href="css/font/font.css" />
     <link rel="stylesheet" href="css/font/HelveticaNeueCyr.css" />
+    
+    <script src="./script.js" defer></script>
 
     <title>ExzistPro</title>
 </head>
@@ -157,21 +160,21 @@
                 у производителя</p>
                 <div class="itemTextField">
                   <img src="./img/tick.png" alt="" class="tickClose">
-                  <p class="item-text">Гарантия 12 месяцев<br />
+                  <p class="item-text">Гарантия <b>12 месяцев</b><br />
                     без чека</p>
                 </div>
                 <div class="itemTextField">
                   <img src="./img/tick.png" alt="" class="tickClose">
-                  <p class="item-text">Доставка 3 дня</p>
+                  <p class="item-text">Доставка <b>3 дня</b></p>
                 </div>
                 <div class="itemTextField">
                   <img src="./img/tick.png" alt="" class="tickClose">
-                  <p class="item-text">Шьем из оригинальной<br />
+                  <p class="item-text">Шьем из <b>оригинальной</b><br />
                     алькантары из Италии</p>
                 </div>
                 <div class="itemTextField">
                   <img src="./img/tick.png" alt="" class="tickClose">
-                  <p class="item-text">Точно подойдет: 5 146<br />
+                  <p class="item-text">Точно подойдет: <b>5 146</b><br />
                     моделей авто уже ошиты<br />
                     нами и мерки взяты<br />
                     из опыта, а не из интернета</p>
@@ -365,26 +368,59 @@
         для родных и любимых</p>
         <hr />
         <div class="presentsSlider">
-          <div class="arrowImage"><img src="./img/nextArrow.png" alt="previous" style="transform: scale(-1, 1);"></div>
+          <div class="arrowImage slider__control slider__control__left">
+            <img src="./img/nextArrow.png" alt="previous" style="transform: scale(-1, 1);">
+          </div>
           <div class="presentPhotos">
+
           <div class="presentItem">
-            <div class="presentPhoto" style="background: url('./img/fifth1.png') center no-repeat;">photo</div>
+            <div class="presentPhoto" style="background: url('./img/presentManajer1.png') center no-repeat;">.</div>
             <p class="presentText">Подарок руководителю<br />
             от коллег</p>
             <hr class="presentHR">
           </div>
+
+          <!-- <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/presentManajer2.png') center no-repeat;"></div>
+            <p class="presentText">Подарок руководителю<br />
+              от коллег</p>
+            <hr class="presentHR">
+          </div> -->
+
           <div class="presentItem">
-            <div class="presentPhoto" style="background: url('./img/fifth2.png') center no-repeat;">photo</div>
+            <div class="presentPhoto" style="background: url('./img/presentParents.png') center no-repeat;"></div>
             <p class="presentText">Подарок родителям</p>
             <hr class="presentHR">
           </div>
-          <div class="presentItem">
-            <div class="presentPhoto" style="background: url('./img/fifth3.png') center no-repeat;">photo</div>
+
+          <!-- <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/presentWife.png') center no-repeat;"></div>
             <p class="presentText">Подарок жене</p>
             <hr class="presentHR">
           </div>
+
+          <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/presentHusband.png') center no-repeat;"></div>
+            <p class="presentText">Подарок мужу</p>
+            <hr class="presentHR">
+          </div> -->
+
+          <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/presentFriend1.png') center no-repeat;"></div>
+            <p class="presentText">Подарок другу</p>
+            <hr class="presentHR">
           </div>
-          <div class="arrowImage"><img src="./img/nextArrow.png" alt="next"></div>
+
+          <!-- <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/presentFriend2.png') center no-repeat;"></div>
+            <p class="presentText">Подарок другу</p>
+            <hr class="presentHR">
+          </div> -->
+
+          </div>
+          <div class="arrowImage slider__control slider__control__right slider__control__show">
+            <img src="./img/nextArrow.png" alt="next">
+          </div>
         </div>
       </div>
     </section>
@@ -475,15 +511,15 @@
         <h6 class="sectionTitle-2" style="line-height: 40px;">Фотогалерея</h6>
         <hr class="galleryHR" />
         <div class="photos">
-          <div style="width: 271px;">
+          <div style="flex-basis: 23%;">
             <img src="./img/photo1.png" alt="" class="photoUp">
             <img src="./img/photo2.png" alt="">
           </div>
-          <div style="width: 373px;">
+          <div style="flex-basis: 32%;">
             <img src="./img/photo3.png" alt="" class="photoUp">
             <img src="./img/photo4.png" alt="">
           </div>
-          <div style="width: 473px;">
+          <div style="flex-basis: 40.4%;">
             <img src="./img/photo5.png" alt="" class="photoUp">
             <img src="./img/photo6.png" alt="">
           </div>
@@ -527,5 +563,7 @@
 
     <!-- /DYNAMIC -->
 
+    <script type="text/javascript" src="./jquery-3.5.1.js"></script>
+    
 </body>
 </html>

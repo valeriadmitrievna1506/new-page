@@ -570,7 +570,7 @@ a > p {
   margin-bottom: 15px;
 }
 .selectedColor {
-  border: 5px solid #e3a062;
+  box-shadow: 0px 0px 0px 5px #e3a062;
 }
 .selectEquipment {
   margin-top: 55px;
@@ -680,11 +680,14 @@ a > p {
   justify-content: space-between;
   align-items: flex-start;
 }
+.presentItem {
+  flex-basis: 23%;
+}
 .presentPhoto {
   outline: 1px solid rgb(227, 160, 98);
   outline-offset: -13px;
-  height: 270px;
   width: 270px;
+  height: 270px;
 }
 .presentText {
   font-family: "ProximaNova";
@@ -814,6 +817,10 @@ a > p {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.photos > div > img {
+  max-width: 100%;
+  min-width: 20%;
 }
 .photoUp {
   margin-bottom: 31px;
