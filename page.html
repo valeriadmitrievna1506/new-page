@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/pagestyle.css" />
+
+    <link rel="stylesheet" href="css/font/font.css" />
+    <link rel="stylesheet" href="css/font/HelveticaNeueCyr.css" />
+
+    <title>ExzistPro</title>
+</head>
+<body>
+
+    <!-- STATIC -->
+    <header class="header">
+      <div class="headerCont container">
+        <div class="headerDesc">
+          <a href="#">
+            <img src="img/logo.png" alt="Логотип" />
+          </a>
+          <div class="shortDesc">
+            Индивидуальный пошив
+            <br />
+            накидок
+          </div>
+        </div>
+        <div class="headerCall">
+          <div>
+            <div class="number">+7(906)611-49-22</div>
+            <div class="number">8(800)550-25-99</div>
+          </div>
+          <div class="headerCall-Button">
+            <p style="font-size: 18px;">ЗАКАЗАТЬ ЗВОНОК</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <div class="navFocus">
+        <p>Накидки из алькантары</p>
+      </div>
+      <div class="navCont container">
+        <div class="navButton" onclick="pageSwitcher(this)" id="EvaMat">
+          EVA-коврики
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="3Dmat">
+          3D-коврики из экокожи
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="Alcantar">
+          Накидки из алькантары
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="Fur">
+          Накидки из меха
+        </div>
+        <hr />
+        <div class="navButton" onclick="pageSwitcher(this)" id="Trunk">
+          Саквояжи для багажника
+        </div>
+      </div>
+    </nav>
+    <!-- /STATIC -->
+
+    <!-- /DYNAMIC -->
+    <section class="firstScreen">
+      <div class="fstScrCont container">
+        <div class="fstScrTitle">
+          <h1>
+            Автомобильные накидки<br />
+            из алькантары в розницу<br />
+            с доставкой за 3 дня
+          </h1>
+          <div class="minPrice">
+            <hr />
+            <p>3500 р. за комплект</p>
+          </div>
+          <a href="#" class="button">
+            <p>ПОДОБРАТЬ КОМПЛЕКТ</p>
+          </a>
+        </div>
+        <div class="fstScrDesc">
+          <div class="descCard">
+            <h3>
+              Свое производство<br />
+              на 600 кв. м
+            </h3>
+            <p>
+              Работаем с 2005 года. <br />
+              Производственный цех<br />
+              во Владимире под Москвой
+            </p>
+          </div>
+          <div class="descCard">
+            <h3>
+              Оплата<br />
+              при получении
+            </h3>
+            <p>
+              Мы — дилеры автомаркета СДЭКа. <br />
+              У них есть наши коврики почти<br />
+              в каждом крупном городе
+            </p>
+          </div>
+          <div class="descCard">
+            <h3>
+              12 месяцев гарантии<br />
+              без чека
+            </h3>
+            <p>
+              На обратной стороне<br />
+              вышиваем номер партии<br />
+              и фамилию мастера
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secondScreen">
+      <div class="scndScrCnt container">
+        <p class="sectionTitle">Как купить качественные накидки для авто<br>
+        и не переплатить?</p>
+        <div class="second-items">
+
+          <div class="itemColumn">
+            <div class="second-item">
+              <p class="item-title">Купить у дилера
+                или на крупной площадке</p>\
+              <div class="itemTextField">
+                <img src="./img/tick.png" alt="" class="tickClose">
+                <p class="item-text">Есть гарантия</p>
+              </div>
+              <div class="itemTextField">
+                <img src="./img/close.png" alt="" class="tickClose close">
+                <p class="item-text">Переплата за посредника</p>
+              </div>
+              <div class="itemTextField">
+                <img src="./img/close.png" alt="" class="tickClose close">
+                <p class="item-text">Сложно поменять - больше<br />
+                  7 дней</p>
+              </div>
+              <div class="secondItemCostField">
+                <p class="item-title item-cost">5000 р. за комплект</p>
+              </div>
+            </div>
+             <div class="itemShadow"></div> 
+          </div>
+
+          <div class="itemColumn">
+            <div class="second-item main-item">
+                <p class="item-title">Заказать напрямую<br />
+                у производителя</p>
+                <div class="itemTextField">
+                  <img src="./img/tick.png" alt="" class="tickClose">
+                  <p class="item-text">Гарантия 12 месяцев<br />
+                    без чека</p>
+                </div>
+                <div class="itemTextField">
+                  <img src="./img/tick.png" alt="" class="tickClose">
+                  <p class="item-text">Доставка 3 дня</p>
+                </div>
+                <div class="itemTextField">
+                  <img src="./img/tick.png" alt="" class="tickClose">
+                  <p class="item-text">Шьем из оригинальной<br />
+                    алькантары из Италии</p>
+                </div>
+                <div class="itemTextField">
+                  <img src="./img/tick.png" alt="" class="tickClose">
+                  <p class="item-text">Точно подойдет: 5 146<br />
+                    моделей авто уже ошиты<br />
+                    нами и мерки взяты<br />
+                    из опыта, а не из интернета</p>
+                </div>
+                <div class="itemTextField">
+                  <img src="./img/tick.png" alt="" class="tickClose">
+                  <p class="item-text">Срок службы не меньше<br />
+                    3-х лет</p>
+                </div>
+                <div class="secondItemCostField">
+                  <p class="item-title item-cost"><b>3500 р. за комплект</b></p>
+                </div>
+                <a href="#" class="button">ПОДОБРАТЬ НАКИДКИ</a>
+            </div>
+             <div class="itemShadow"></div> 
+          </div>
+
+          <div class="itemColumn">
+            <div class="second-item">
+              <p class="item-title">Купить кустарное
+                производство</p>
+              <div class="itemTextField">
+                <img src="./img/tick.png" alt="" class="tickClose">
+                <p class="item-text">Дешевле всего</p>
+              </div>
+              <div class="itemTextField">
+                <img src="./img/close.png" alt="" class="tickClose close">
+                <p class="item-text">Износится через год:<br />
+                  кустарное производство<br />
+                  не может закупить
+                  оригинальную алькантару</p>
+              </div>
+              <div class="itemTextField">
+                <img src="./img/close.png" alt="" class="tickClose close">
+                <p class="item-text">Гарантия только на словах</p>
+              </div>
+              <div class="itemTextField">
+                <img src="./img/close.png" alt="" class="tickClose close">
+                <p class="item-text">Может не подойти по размеру</p>
+              </div>
+              <div class="secondItemCostField">
+                <p class="item-title item-cost">3000 р. за комплект</p>
+              </div>
+            </div>
+             <div class="itemShadow"></div>
+          </div>   
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="thirdScreen">
+      <div class="container">
+        <div class="trdScrCont">
+          <p class="sectionTitle">ExzistPro - крупный производитель<br />
+            аксессуаров для салона авто с 2005 года</p>
+            <div class="trdItem" style="background: url('img/trdProduction.png') center no-repeat ;">
+              <p class="trdItem-text"><b>
+                Свое производство 600 м<sup>2</sup><br />
+                во Владимире
+              </b></p>
+            </div>
+            <div class="trdItem" style="background: url('img/trdSDEK.png') center no-repeat ;">
+              <p class="trdItem-text">
+                Поставляем накидки<br />
+                для СДЭК маркет и еще<br />
+                11 крупных реселлеров
+              </p>
+            </div>
+            <div class="trdItem" style="background: url('img/trdCapes.png') center no-repeat ;">
+              <div>
+                <p class="trdItem-text"><b>
+                  С 2005 года мы торговали<br />
+                  только оптом.
+                </b></p>
+                <p class="trdItem-text" style="font-size: 20px; margin-top: 40px;">
+                  С 2019 года мы обходим посредников<br />
+                  и продаем премиум-накидки<br />
+                  из алькантары в розницу
+                </p>
+              </div>
+            </div>
+            <a href="#" class="button" style="margin-top: 38px;">
+              <p>ПОДОБРАТЬ НАКИДКИ</p>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="fouthScreen">
+      <div class="frScrCont container">
+        <h6 class="sectionTitle-2">Выберите свои накидки</h6>
+        <hr />
+        <div class="selectPhotoColorEquipment">
+          <div class="selectPhotos">
+            <div class="selectPhoto selectPhoto-1" style="background:url('img/fourSK1.png') center no-repeat ;"></div>
+            <div class="selectPhoto" style="background:url('img/fourSK2.png') center no-repeat ;"></div>
+            <div class="selectPhoto" style="background:url('img/fourSK3.png') top no-repeat ;"></div>
+            <div class="selectPhoto" style="background:url('img/fourSK4.png') right no-repeat ;"></div>
+            <div class="selectPhoto" style="background:url('img/fourSK5.png') center no-repeat ;"></div>
+          </div>
+          <div class="selectColorEquipment">
+            <div class="selectColor">
+              <p class="selectTitle" style="margin-left: 15px;">1. Выберите цвет материала и строчки:</p>
+              <div class="selectColorBlock">
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #585858, #000);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #c6c6c6, #696969);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #fdf3e7, #f8cab2);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #edaf93, #b05f3b);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #a9837c, #743e33);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #8ee2f7, #0086a7);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #356c8b, #08344d);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #fafafa, #f7f7f7);
+                border: 1px solid #cbcbcb;"></div>
+                <div class="colorForSelect selectedColor" style="background: linear-gradient(129deg, #e97277, #d8111a);"></div>
+                <div class="colorForSelect" style="background: linear-gradient(129deg, #bc3f5e, #860525);"></div>
+                <div class="colorForSelect" style="background: url('./img/sample1.png') center no-repeat"></div>
+                <div class="colorForSelect" style="background: url('./img/sample2.png') center no-repeat"></div>
+                <div class="colorForSelect" style="background: url('./img/sample3.png') center no-repeat"></div>
+                <div class="colorForSelect" style="background: url('./img/sample4.png') center no-repeat"></div>
+              </div>
+              <div class="selectedColorTextBlock">
+                <p class="selectSubTitle">Выбран цвет:</p>
+                <p class="selectedColorText" style="margin-left: 17px; color: #000;"><b>Красный</b></p>
+              </div>
+            </div>
+            <div class="selectEquipment">
+              <p class="selectTitle">2. Выберите комплектацию:</p>
+              <div class="equipmentBlocks">
+                <div class="equipmentBlock">
+                  <div class="photoEquipment"
+                  style="background:url('img/equip1.png') center no-repeat ;
+                  border: 5px solid rgb(227, 160, 98);"></div>
+                  <p class="selectSubTitle">
+                    Передние<br />
+                    накидки</p>
+                  <p class="trdItem-text equipCost">3390 руб</p>
+                </div>
+                <div class="equipmentBlock">
+                  <div class="photoEquipment" style="background:url('img/equip2.png') center no-repeat ;"></div>
+                  <p class="selectSubTitle">
+                    Задние<br />
+                    накидки</p>
+                  <p class="trdItem-text equipCost">3390 руб</p>
+                </div>
+                <div class="equipmentBlock">
+                  <div class="photoEquipment" style="background:url('img/equip3.png') center no-repeat ;"></div>
+                  <p class="selectSubTitle">
+                    Полный<br />
+                    комплект</p>
+                  <p class="trdItem-text equipCost">7180 руб</p>
+                </div>
+                <div class="equipmentBlock">
+                  <div class="photoEquipment" style="background:url('img/equip4.png') center no-repeat ; margin-bottom: 16px;"></div>
+                  <p class="selectSubTitle">
+                    Добавить<br />
+                    стильный<br />
+                    аксессуар
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uniqueCape">
+          <p class="selectTitle">
+          3. Придайте вашим накидкам уникальности! Придумайте<br />
+          надпись, изображение или выберите из предложенных нами!</p>
+          <a href="" class="button">ВЫБРАТЬ ИЛИ ЗАГРУЗИТЬ</a>
+        </div>
+        <div class="selectAdress">
+          <p class="selectTitle">4. Выберите адрес пункта для самовывоза:</p>
+          <select class="selectorAdress" style="width: 285px;">
+            <option value="г. Тверь">г. Тверь</option>
+          </select>
+          <select class="selectorAdress" style="width: 400px;">
+            <option value="ул. Бобкова, д. 21, корп. 1">ул. Бобкова, д. 21, корп. 1</option>
+          </select>
+        </div>
+        <div class="totalCost">
+          <p class="totalCost-text">Стоимость заказа:</p>
+          <p class="totalCost-text costText">3990 руб</p>
+        </div>
+        <a href="#" class="button">ЗАКАЗАТЬ</a>
+      </div>
+    </section>
+
+    <section class="fifthScreen">
+      <div class="fthScrCnt container">
+        <p class="sectionTitle-2" style="color: #fff; line-height: 50px;">Примеры оригинальных поздравлений<br />
+        для родных и любимых</p>
+        <hr />
+        <div class="presentsSlider">
+          <div class="arrowImage"><img src="./img/nextArrow.png" alt="previous" style="transform: scale(-1, 1);"></div>
+          <div class="presentPhotos">
+          <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/fifth1.png') center no-repeat;">photo</div>
+            <p class="presentText">Подарок руководителю<br />
+            от коллег</p>
+            <hr class="presentHR">
+          </div>
+          <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/fifth2.png') center no-repeat;">photo</div>
+            <p class="presentText">Подарок родителям</p>
+            <hr class="presentHR">
+          </div>
+          <div class="presentItem">
+            <div class="presentPhoto" style="background: url('./img/fifth3.png') center no-repeat;">photo</div>
+            <p class="presentText">Подарок жене</p>
+            <hr class="presentHR">
+          </div>
+          </div>
+          <div class="arrowImage"><img src="./img/nextArrow.png" alt="next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sixthScreen">
+      <div class="container">
+        <p class="sectionTitle-2" style="text-align: left; line-height: normal;">Накидки премиум - класса из алькантары ExzistPro</p>
+        <p class="sxthText"
+        style="
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        ">
+        Гарантия 12 месяцев без чека
+      </p>
+        <div class="compositionBlock">
+          <img src="./img/materialComposition.png" alt="Состав материала">
+          <div class="compositionBlockText">
+            <div class="p-compositionText">
+              <img src="./img/checked.png" alt="yes"class="checked">
+              <p class="sxthText">
+                На каждой накидке с обратной стороны<br />
+                мы вышиваем имя мастера и номер партии</p>
+            </div>
+            <div class="p-compositionText">
+              <img src="./img/checked.png" alt="yes"class="checked">
+              <p class="sxthText">
+                Наш брак меньше 0,3%, но даже если он<br />
+                придется на вас, то мы быстро заменим<br />
+                накидку, не создавая вам головной боли</p>
+            </div>
+            <div class="p-compositionText">
+              <img src="./img/checked.png" alt="yes"class="checked">
+              <p class="sxthText">
+                Если вы случайно испортите одну накидку<br />
+                из комплекта, то мы быстро сможем<br />
+                изготовить точно такую же
+              </p>
+            </div>
+            <a href="#" class="button compositionButton">ПОДОБРАТЬ НАКИДКИ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seventhScreen">
+      <div class="svnScrCnt container">
+        <p class="sectionTitle-2">Накидка идеально подойдет по размеру</p>
+        <p class="sxthText"
+        style="
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 110px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        ">
+        20% розничных клиентов приходят по рекомендации
+      </p>
+      <div class="idealSizeBlock">
+        <div class="idealSizeContent">
+          <p class="trdItem-text idealSizeTextTitle"><b>
+            База размеров накидок "выстраданы"<br />
+            из нашего 15-летнего опыта.
+          </b></p>
+          <div class="idealSizeTextPlace" style="margin-bottom: 20px;">
+            <hr class="presentHR idealSizeHR">
+            <p class="sxthText">
+              Некоторые конкуренты скачивают базы из интернета<br />
+              и накидки по лекалам из интернета не всегда подходят<br />
+              по размеру и сидят не по форме.
+            </p>
+          </div>
+          <div class="idealSizeTextPlace">
+            <hr class="presentHR idealSizeHR">
+            <p class="sxthText">
+              Если размеры не подойдут, можете<br />
+              не оплачивать заказ.
+            </p>
+          </div>
+          <a href="#" class="button idealSizeButton">ПОДОБРАТЬ НАКИДКИ</a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="eighthScreen">
+      <div class="eightScrCnt container">
+        <h6 class="sectionTitle-2" style="line-height: 40px;">Фотогалерея</h6>
+        <hr class="galleryHR" />
+        <div class="photos">
+          <div style="width: 271px;">
+            <img src="./img/photo1.png" alt="" class="photoUp">
+            <img src="./img/photo2.png" alt="">
+          </div>
+          <div style="width: 373px;">
+            <img src="./img/photo3.png" alt="" class="photoUp">
+            <img src="./img/photo4.png" alt="">
+          </div>
+          <div style="width: 473px;">
+            <img src="./img/photo5.png" alt="" class="photoUp">
+            <img src="./img/photo6.png" alt="">
+          </div>
+        </div>
+        <a href="#" class="button galleryButton">ПОДОБРАТЬ НАКИДКИ</a>
+      </div>
+    </section>
+
+    <section class="tenthScreen">
+      <div class="tnthScrCnt container">
+        <p class="tenthTitle">
+          Получите оптовое<br />
+          коммерческое предложение
+        </p>
+        <hr class="tenthHR"/>
+        <div class="blockTextForm">
+          <p class="sxthText tnthtext">
+            Оставьте свои данные в форме справа, чтобы<br />
+            наши менеджеры могли с Вами связаться и<br />
+            помочь вам стать нашим дилером.
+          </p>
+          <form action="#" class="tenthForm">
+            <input type="text" class="inputName" placeholder="Ваше имя*">
+            <hr class="formSplit">
+            <input type="text" class="inputPhone" placeholder="Номер телефона*">
+          </form>
+          <a href="#" class="button formButton">ОТПРАВИТЬ</a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer container">
+        <p class="footerText">
+          Производство и продажа аксессуаров для автомобилей. ООО «Рус-Спорт». ИНН: 3328014835, КПП: 332801001, ОГРН: 1163328063557
+        </p>
+        <p class="footerText">Все права защищены. 2005 (с)</p>
+      </div>
+    </footer>
+
+    <!-- /DYNAMIC -->
+
+</body>
+</html>

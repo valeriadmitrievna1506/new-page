@@ -1,0 +1,17 @@
+/* Обычный */
+@font-face {
+	font-family: 'PlayfairDisplay'; 
+	src: url(PlayfairDisplay.ttf); 
+}
+ 
+/* Курсив */
+@font-face {
+	font-family: 'PlayfairDisplay-Italic'; 
+	src: url(PlayfairDisplay-Italiс.ttf); 
+}
+
+/* Обычный */
+@font-face {
+	font-family: 'ProximaNova'; 
+	src: url(ProximaNova.ttf); 
+}

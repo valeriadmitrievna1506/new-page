@@ -1,0 +1,919 @@
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body,
+html {
+  margin: auto;
+  background: white;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.headerCall-Button:hover,
+.button:hover,
+.navButton:hover {
+  cursor: pointer;
+}
+
+.button,
+.button:focus,
+.button:active {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  box-shadow: 0px 12px 28.48px 3.52px rgba(240, 74, 81, 0.29);
+  width: 343px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fstScrCont,
+.sthScrCont,
+.fstScrTitle,
+.chsMatTitle,
+.matCard,
+.chooseMat,
+.orderText,
+.orderForm,
+.matApper,
+.clientContacts,
+.carDesc,
+.subFfScr,
+.markers,
+.facts,
+.columnFlexCont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.number,
+.headerCall-Button,
+.firstScreen,
+.secondScreen,
+.secScrCont,
+.MatButton:hover,
+.thirdScreen,
+.trdScrCont,
+.orderCard,
+input,
+select,
+.fifthScreen,
+.fourthScreen,
+.fourthScreen > div:first-of-type,
+.sixthScreen {
+  background-repeat: no-repeat;
+}
+
+.headerCont,
+.headerDesc,
+.headerCall,
+.navCont,
+.fstScrDesc,
+.answersCont,
+.cont,
+.minPrice,
+.matApper > div,
+.carDesc > div,
+.contacts,
+.matApperForTrunk,
+.materialList {
+  font-family: "ProximaNova";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button,
+.button:focus,
+.button:active {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgb(143, 34, 34) 0%,
+    rgb(183, 46, 49) 56%,
+    rgb(222, 57, 63) 100%
+  );
+  box-shadow: 0px 12px 28.48px 3.52px rgba(240, 74, 81, 0.29);
+  width: 343px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+/*********************************************************************/
+/*****HEADER*****/
+
+.header {
+  width: 100%;
+  height: 112px;
+  background-color: rgb(4, 4, 5);
+  color: white;
+}
+
+.headerCont {
+  height: 112px;
+  margin-bottom: 37px;
+}
+
+.shortDesc {
+  margin-left: 18px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: left;
+}
+
+.headerCall-Button {
+  height: 91px;
+  width: 302px;
+  padding-bottom: 9px;
+  margin-top: 10px;
+  margin-right: -45px;
+  background-image: url("../img/Button.png");
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  padding-left: 27px;
+  line-height: 1;
+  font-size: 18px;
+  text-align: center;
+  background-image: url("../img/phone.png");
+}
+
+.number:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+/*****endHEADER*****/
+
+/*********************************************************************/
+
+/*****Navigator*****/
+
+nav {
+  background-color: white;
+  height: 53px;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 600;
+  font-size: 18px;
+  z-index: 0;
+}
+
+.navButton:active,
+.navButton:hover,
+.navButton {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 3px;
+}
+
+nav > div > hr {
+  border: none;
+  background-color: black;
+  width: 1px;
+  height: 38px;
+}
+
+.navFocus {
+  position: absolute;
+  height: 75px;
+  width: 320px;
+  margin-top: -11px;
+  margin-left: 40.5%;
+  margin-bottom: 10px;
+  background-image: url("../img/focus.png");
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+/*****endNavigator*****/
+
+/*********************************************************************/
+
+/*****FirstScreen******/
+
+.firstScreen {
+  background: no-repeat right url("../img/bgFirstScreen.png");
+  background-size: cover;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.fstScrTitle {
+  align-items: flex-start;
+  margin-top: 109px;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: "PlayfairDisplay";
+  color: rgb(251, 200, 153);
+  line-height: 1.182;
+  text-align: left;
+  margin: 0;
+}
+
+.minPrice {
+  font-size: 26px;
+  font-family: "Proxima Nova";
+  color: white;
+  line-height: 1;
+  text-align: center;
+  margin: 34px 0;
+}
+
+.minPrice > hr {
+  border: none;
+  background-color: rgb(251, 200, 153);
+  width: 50px;
+  height: 1px;
+  margin-right: 23px;
+}
+
+.descCard {
+  border-radius: 10px;
+  background-color: rgb(23, 21, 20);
+  width: 380px;
+  height: 215px;
+  padding-left: 33px;
+}
+
+.fstScrDesc {
+  margin-top: 115px;
+}
+
+h2,
+h3,
+.descCard > p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "ProximaNova";
+  color: rgb(251, 200, 153);
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 33px;
+}
+
+.descCard > p {
+  margin-top: 29px;
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: rgb(204, 204, 204);
+  line-height: 1.3;
+  text-align: left;
+}
+
+a > p {
+  font-size: 18px;
+  font-family: "PlayfairDisplay";
+  line-height: 2;
+  text-align: center;
+}
+
+/*****endFirstScreen******/
+
+/*********************************************************************/
+
+/* Second Screen */
+
+.secondScreen {
+  margin: 0;
+  text-align: center;
+  background-color: #000;
+}
+.scndScrCnt {
+  padding: 100px 0px;
+}
+.sectionTitle {
+  font-size: 40px;
+  font-family: "PlayfairDisplay";
+  color: rgb(251, 200, 153);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+}
+.second-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-item {
+  height: 447px;
+  width: 380px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 45px 55px;
+}
+.main-item {
+  height: 645px;
+}
+.itemTextField {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.tickClose {
+  margin-top: 6px;
+  margin-right: 18px;
+  width: 11px;
+}
+.close {
+  margin-left: 1.5px;
+  margin-right: 19.5px;
+  width: 8px;
+}
+.item-title {
+  color: #000;
+  font-size: 20px;
+  font-family: "ProximaNova";
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.item-text {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #3e3a32;
+  font-size: 16px;
+  font-family: "ProximaNova";
+}
+.main-item {
+  margin: 0 15px;
+}
+.main-item > .item-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main-item > .itemTextField > .item-text {
+  color: #000;
+  font-size: 18px;
+}
+.main-item > .itemTextField > .tickClose {
+  width: 15px;
+}
+.main-item > .button {
+  width: 100%;
+  height: 65px;
+  font-size: 14px;
+  margin-top: 22px;
+}
+.secondItemCostField {
+  border: 1px solid #fbc993;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.item-cost {
+  margin: 10px 25px;
+  text-align: center;
+}
+.itemColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemShadow {
+  width: 350px;
+  height: 9px;
+  background-color: rgb(207, 207, 207);
+  border-radius: 0px 0px 8px 8px;
+}
+
+/* end of SECOND SCREEN */
+
+/* ********************************************************************* */
+
+/* THIRD SCREEN */
+
+.thirdScreen {
+  background-color: #000;
+  padding: 106px 125px;
+}
+.trdScrCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.trdItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 367px;
+  width: 77%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 68px;
+}
+.trdItem > div {
+  flex-basis: 50%;
+}
+.trdItem-text {
+  line-height: 34px;
+  margin: 0;
+  font-family: "ProximaNova";
+  font-size: 24px;
+  flex-basis: 50%;
+}
+
+/* end of THIRD SCREEN */
+
+/* ********************************************************************** */
+
+/* FORTH SCREEN */
+
+.fouthScreen {
+  background-color: #fff;
+  padding-top: 94px;
+  padding-bottom: 106px;
+}
+.sectionTitle-2 {
+  font-family: "PlayfairDisplay";
+  font-size: 40px;
+  line-height: 75px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+}
+.frScrCont > hr {
+  border: none;
+  background-color: rgb(227, 160, 98);
+  width: 45px;
+  height: 1px;
+  margin-bottom: 80px;
+}
+.selectTitle {
+  font-family: "ProximaNova";
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.selectedColorTextBlock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.selectSubTitle, .selectedColorText {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(56, 56, 56);
+  margin: 0;
+}
+.selectPhotoColorEquipment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.selectPhotos {
+  flex-basis: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.selectPhoto {
+  border: 1px solid rgb(227, 160, 98);
+  width: 135px;
+  height: 90px;
+}
+.selectPhoto-1 {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+  height: 390px;
+}
+.selectColorEquipment {
+  flex-basis: 43%;
+}
+.selectColorBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.colorForSelect {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.selectedColor {
+  border: 5px solid #e3a062;
+}
+.selectEquipment {
+  margin-top: 55px;
+}
+.equipmentBlocks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.equipmentBlock {
+  text-align: center;
+}
+.photoEquipment {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgb(227, 160, 98);
+  border-radius: 120px;
+  margin-bottom: 20px;
+}
+.equipCost {
+  font-weight: bold;
+  margin-top: 18px;
+}
+.uniqueCape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 115px;
+  margin-bottom: 70px;
+}
+.uniqueCape > p {
+  margin: 0;
+}
+.uniqueCape > .button {
+  height: 50px;
+  width: 270px;
+  font-size: 14px;
+  font-family: "PlayfairDisplay";
+}
+.selectorAdress {
+  line-height: 22px;
+  padding: 14px 15px;
+  font-family: "ProximaNova";
+  font-size: 18px;
+  border-radius: 3px;
+  border: 1px solid #e8e8e8;
+  margin-right: 15px;
+  appearance: none;
+  background: url("../img/expand.png") no-repeat right 15px center, #f9f9f9;
+}
+.totalCost {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.totalCost-text {
+  font-family: "PlayfairDisplay";
+  font-size: 24px;
+  margin: 0;
+  margin-right: 30px;
+}
+.costText {
+  font-size: 35px;
+  font-weight: bolder;
+  line-height: 35px;
+}
+.frScrCont > .button {
+  font-family: "PlayfairDisplay";
+  font-size: 18px;
+  line-height: 36;
+  width: 345px;
+}
+
+/* end of FOURTH SCREEN */
+
+/* ***************************************************** */
+
+/* FIFTH SCREEN */
+
+.fifthScreen {
+  padding-top: 100px;
+  background: url('../img/fifthBG.png') no-repeat top;
+  background-size: 100% 355px;
+}
+.fthScrCnt > hr {
+  border: none;
+  background-color: rgb(227, 160, 98);
+  width: 85px;
+  height: 1px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.presentsSlider {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.arrowImage {
+  margin-top: 117.5px;
+}
+.presentPhotos {
+  margin: 0 50px;
+  flex-basis: 74.4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.presentPhoto {
+  outline: 1px solid rgb(227, 160, 98);
+  outline-offset: -13px;
+  height: 270px;
+  width: 270px;
+}
+.presentText {
+  font-family: "ProximaNova";
+  font-size: 22px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin: 0;
+  margin-top: 15px;
+}
+.presentHR {
+  border: none;
+  background-color: rgb(227, 160, 98);
+  width: 37px;
+  height: 1px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+/* end of FIFTH SCREEN */
+
+/* ************************************************************************* */
+
+/* SIXTH SCREEN */
+
+.sixthScreen {
+  background-color: #fff;
+  padding-bottom: 130px;
+}
+.compositionBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.compositionBlockText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-basis: 40%;
+}
+.p-compositionText {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 35px;
+}
+.checked {
+  margin-right: 30px;
+}
+.sxthText {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  line-height: 24px;
+  color: #383838;
+  letter-spacing: 0.25px;
+  margin: 0;
+}
+.compositionButton {
+  margin-left: 30px;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+/* end of SIXTH SCREEN */
+
+/* ********************************************************************************************* */
+
+/* SEVENTH SCREEN */
+
+.seventhScreen {
+  background: url('../img/fifthBG3.png') bottom no-repeat;
+  padding-bottom: 228px;
+}
+.idealSizeBlock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.idealSizeContent {
+  flex-basis: 50%;
+}
+.idealSizeTextTitle {
+  letter-spacing: 0.25rem;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.idealSizeTextPlace {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.idealSizeHR {
+  width: 25px;
+  margin: 0;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.idealSizeButton {
+  font-size: 18px;
+  line-height: 36px;
+  margin-left: 40px;
+  margin-top: 55px;
+}
+
+/* end of SEVENTH SCREEN */
+
+/* ********************************************************************* */
+
+/* EIGHTH SCREEN */
+
+.eighthScreen {
+  padding-top: 95px;
+  background: url('../img/photoBG.png') bottom 106px left no-repeat;
+}
+.galleryHR {
+  border: none;
+  background-color: rgb(227, 160, 98);
+  width: 45px;
+  height: 1px;
+  margin-bottom: 35px;
+}
+.photos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.photoUp {
+  margin-bottom: 31px;
+}
+.galleryButton {
+  font-size: 18px;
+  line-height: 36px;
+  margin: 106px auto;
+}
+
+/* end of EIGHTH SCREEN */
+
+/* **************************************************************************** */
+
+/* TENTH SCREEN */
+
+.tenthScreen {
+  background: url('../img/tenthBG.png') center no-repeat;
+  padding-top: 65px;
+  padding-bottom: 70px;
+  background-size: cover;
+}
+.tenthTitle {
+  margin: 0;
+  font-family: "PlayfairDisplay";
+  font-size: 36px;
+  color: #fff;
+  text-align: left;
+}
+.tenthHR {
+  border: none;
+  background-color: rgb(227, 160, 98);
+  width: 85px;
+  height: 1px;
+  margin: 20px 0px;
+}
+.tnthtext {
+  font-size: 18px;
+  color: #fff;
+}
+.blockTextForm {
+  display: flex;
+  align-items: flex-start;
+}
+form {
+  display: flex;
+  background-color: #fff;
+  margin-left: 120px;
+  align-items: center;
+}
+.inputName {
+  background: url('../img/formName.png') top 15px left 9px no-repeat, #fff;
+  width: 176px;
+}
+.inputPhone {
+  background: url('../img/formPhone.png') top 16px left 9px no-repeat, #fff;
+  width: 191px;
+}
+input {
+  border: none;
+  font-size: 14px;
+  padding: 15px 30px;
+}
+.formSplit {
+  border: none;
+  background-color: #6e6e6e;
+  width: 32px;
+  height: 1px;
+  transform: rotate(90deg);
+  margin: 0;
+}
+.formButton {
+  height: 43px;
+  width: 176px;
+  font-size: 16px;
+  line-height: 24;
+  margin-left: 31px;
+}
+
+/* end of TENTH SCREEN */
+
+/* ******************************************************************* */
+
+/* FOOTER */
+
+footer {
+  background-color: #000;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerText {
+  font-family: "HelveticaNeueCyr";
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+/* end of FOOTER */
